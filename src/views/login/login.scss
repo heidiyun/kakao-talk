@@ -1,0 +1,61 @@
+.layout {
+  .login-button {
+    &[type='user'] {
+      display: none;
+    }
+    cursor: pointer;
+
+    &[type='noneUser'] {
+      margin: auto;
+      width: 200px;
+      height: 100px;
+      background: #457ff4;
+      line-height: 100px;
+      color: #ffffff;
+    }
+    &:hover {
+      background: #333;
+    }
+
+    &:active {
+      background: #555555;
+    }
+  }
+
+  .logout-button {
+    &[type='user'] {
+      margin: auto;
+      width: 200px;
+      height: 100px;
+      background: #389;
+      line-height: 100px;
+      color: #ffffff;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      background: #555555;
+    }
+
+    &[type='noneUser'] {
+      display: none;
+    }
+  }
+
+  .user-info {
+    &[type='noneUser'] {
+      display: none;
+    }
+    &[type='user'] {
+      margin-bottom: 20px;
+      .photo {
+        margin: auto;
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
